@@ -8,19 +8,18 @@ sources:
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
   cache_path: /home/ph/Área de trabalho/Code/poo-dd-cd-bloco-b-Phdss17/tasks/.tko/cache/poo.md
-  cache_timestamp: '2025-10-20 21:48:20'
+  cache_timestamp: '2025-10-26 17:15:18'
   filters:
   - acesso
   - simples
-expanded:
-- poo@campanha-principal
-- poo@bloco_b-agregação-simples
-tasks: {}
+expanded: []
+tasks:
+  poo@grafite: '{rate:100}'
 flags:
   quests: 0
   tracks: 0
   tasks: 0
-  graph: 0
+  graph: 1
   xray: 0
 lang: py
-selected: poo@charger
+selected: poo@campanha-principal

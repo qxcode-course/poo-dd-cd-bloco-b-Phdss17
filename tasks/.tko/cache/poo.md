@@ -26,65 +26,58 @@ Significado das tags nas questões:
 - [ ] `#chaves_ssh   :task`[Criando repositórios local em máquina física](https://github.com/qxcodepoo/arcade/blob/master/wiki/git/chaves.md)
 - [ ] `@git_pratica  :task`[Prática git](https://github.com/qxcodepoo/arcade/blob/master/base/git_pratica/Readme.md)
 
-### BLOCO_A: Treino de Algoritmos
+### BLOCO_A: Treino de Algoritmos<!-- +algo:1 -->
 
-- [ ] `@busca       :leet`[Estressados Operações I](https://github.com/qxcodepoo/arcade/blob/master/base/busca/Readme.md)
-- [ ] `@contagem    :leet`[Estressados Operações II](https://github.com/qxcodepoo/arcade/blob/master/base/contagem/Readme.md)
-- [ ] `@manipulacao :leet`[Estressados Operações III](https://github.com/qxcodepoo/arcade/blob/master/base/manipulacao/Readme.md)
-- [ ] `@especiais   :leet`[Estressados Operações IV](https://github.com/qxcodepoo/arcade/blob/master/base/especiais/Readme.md)
+- [ ] `@busca       *1 :leet`[Estressados Operações I](https://github.com/qxcodepoo/arcade/blob/master/base/busca/Readme.md)
+- [ ] `@contagem    *1 :leet`[Estressados Operações II](https://github.com/qxcodepoo/arcade/blob/master/base/contagem/Readme.md)
+- [ ] `@manipulacao +2 :leet`[Estressados Operações III](https://github.com/qxcodepoo/arcade/blob/master/base/manipulacao/Readme.md)
+- [ ] `@especiais   +1 :leet`[Estressados Operações IV](https://github.com/qxcodepoo/arcade/blob/master/base/especiais/Readme.md)
 
 ## Campanha Principal
 
-### BLOCO_B: Primeiras Classes
+### BLOCO_A: Primeiras Classes<!-- +basic:1 -->
 
-- [ ] `@toalha      :open`[Toalha, o item mais útil do universo](https://github.com/qxcodepoo/arcade/blob/master/base/toalha/Readme.md)
-- [ ] `@animal      :leet`[Animal que nasce, cresce, morre](https://github.com/qxcodepoo/arcade/blob/master/base/animal/Readme.md)
-- [ ] `@carro       :leet`[Um carro simples](https://github.com/qxcodepoo/arcade/blob/master/base/carro/Readme.md)
-- [ ] `@calculadora :leet`[Uma calculadora com bateria](https://github.com/qxcodepoo/arcade/blob/master/base/calculadora/Readme.md)
-- [ ] `@enxugar     :leet`[Toalha com testes](https://github.com/qxcodepoo/arcade/blob/master/base/enxugar/Readme.md)
+- [ ] `@toalha      *1 :open`[Toalha, o item mais útil do universo](https://github.com/qxcodepoo/arcade/blob/master/base/toalha/Readme.md)
+- [ ] `@animal      *1 :leet`[Animal que nasce, cresce, morre](https://github.com/qxcodepoo/arcade/blob/master/base/animal/Readme.md)
+- [ ] `@carro       *1 :leet`[Um carro simples](https://github.com/qxcodepoo/arcade/blob/master/base/carro/Readme.md)
+- [ ] `@calculadora +1 :leet`[Uma calculadora com bateria](https://github.com/qxcodepoo/arcade/blob/master/base/calculadora/Readme.md)
+- [ ] `@enxugar     *1 :leet`[Toalha com testes](https://github.com/qxcodepoo/arcade/blob/master/base/enxugar/Readme.md)
 
-### BLOCO_B: Modificadores de Acesso
+### BLOCO_B: Modificadores de Acesso<!-- +access:1 -->
 
-- [ ] `@chinela     :open`[Comprando uma chinela 40/41](https://github.com/qxcodepoo/arcade/blob/master/base/chinela/Readme.md)
-- [ ] `@camisa      :open`[Comprando uma camisa XG](https://github.com/qxcodepoo/arcade/blob/master/base/camisa/Readme.md)
-- [ ] `@roupa       :leet`[Roupa com testes](https://github.com/qxcodepoo/arcade/blob/master/base/roupa/Readme.md)
-- [ ] `@relogio     :leet`[Garante uma hora válida no relógio](https://github.com/qxcodepoo/arcade/blob/master/base/relogio/Readme.md)
+- [ ] `@chinela    *1 :open`[Comprando uma chinela 40/41](https://github.com/qxcodepoo/arcade/blob/master/base/chinela/Readme.md)
+- [ ] `@camisa     *1 :open`[Comprando uma camisa XG](https://github.com/qxcodepoo/arcade/blob/master/base/camisa/Readme.md)
+- [ ] `@roupa      *1 :leet`[Roupa com testes](https://github.com/qxcodepoo/arcade/blob/master/base/roupa/Readme.md)
+- [ ] `@relogio    *1 :leet`[Garante uma hora válida no relógio](https://github.com/qxcodepoo/arcade/blob/master/base/relogio/Readme.md)
 
-### BLOCO_B: Agregação Simples
+### BLOCO_B: Agregação Simples<!-- +aggreg:1 -->
 
-- [ ] `@notebook    :open`[Notebook com carregador e bateria](https://github.com/qxcodepoo/arcade/blob/master/base/notebook/Readme.md)
-- [ ] `@motoca      :leet`[Crianças andando de motoca](https://github.com/qxcodepoo/arcade/blob/master/base/motoca/Readme.md)
-- [ ] `@grafite     :leet`[Porta minas de um grafite só](https://github.com/qxcodepoo/arcade/blob/master/base/grafite/Readme.md)
-- [ ] `@motouber    :leet`[MotoUber com motorista e passageiro](https://github.com/qxcodepoo/arcade/blob/master/base/motouber/Readme.md)
-- [ ] `@tamagotchi  :leet`[Alimente, brinque e mate](https://github.com/qxcodepoo/arcade/blob/master/base/tamagotchi/Readme.md)
-- [ ] `@charger     :leet`[Notebook com TESTES](https://github.com/qxcodepoo/arcade/blob/master/base/charger/Readme.md)
+- [ ] `@motoca     *1 :leet`[Crianças andando de motoca](https://github.com/qxcodepoo/arcade/blob/master/base/motoca/Readme.md)
+- [ ] `@grafite    *1 :leet`[Porta minas de um grafite só](https://github.com/qxcodepoo/arcade/blob/master/base/grafite/Readme.md)
+- [ ] `@motouber   *1 :leet`[MotoUber com motorista e passageiro](https://github.com/qxcodepoo/arcade/blob/master/base/motouber/Readme.md)
+- [ ] `@notebook   +1 :open`[Notebook com carregador e bateria](https://github.com/qxcodepoo/arcade/blob/master/base/notebook/Readme.md)
+- [ ] `@charger    +1 :leet`[Notebook com TESTES](https://github.com/qxcodepoo/arcade/blob/master/base/charger/Readme.md)
+- [ ] `@tamagotchi +0 :leet`[Alimente, brinque e mate](https://github.com/qxcodepoo/arcade/blob/master/base/tamagotchi/Readme.md)
 
-### BLOCO_C: ArrayList I - Listas
+### BLOCO_C: Listas<!-- +arrays:1 -->
 
-- [ ] `@array       :open`[Manipulações em Arrays](https://github.com/qxcodepoo/arcade/blob/master/base/array/Readme.md)
-- [ ] `@budega      :leet`[Gerencie a fila de espera e atendimento](https://github.com/qxcodepoo/arcade/blob/master/base/budega/Readme.md)
-- [ ] `@lapiseira   :leet`[Lapiseira com múltiplos grafites](https://github.com/qxcodepoo/arcade/blob/master/base/lapiseira/Readme.md)
-- [ ] `@tabuleiro   :leet`[Jogo de tabuleiro e armadilhas](https://github.com/qxcodepoo/arcade/blob/master/base/tabuleiro/Readme.md)
-- [ ] `@pula-pula   :leet`[Gerenciando entradas e saídas do pula pula](https://github.com/qxcodepoo/arcade/blob/master/base/pula-pula/Readme.md)
+- [ ] `@array      *3 :open`[Manipulações em Arrays](https://github.com/qxcodepoo/arcade/blob/master/base/array/Readme.md)
+- [ ] `@budega     *2 :leet`[Gerencie a fila de espera e atendimento](https://github.com/qxcodepoo/arcade/blob/master/base/budega/Readme.md)
+- [ ] `@lapiseira  *1 :leet`[Lapiseira com múltiplos grafites](https://github.com/qxcodepoo/arcade/blob/master/base/lapiseira/Readme.md)
+- [ ] `@pula-pula  *1 :leet`[Gerenciando entradas e saídas do pula pula](https://github.com/qxcodepoo/arcade/blob/master/base/pula-pula/Readme.md)
+- [ ] `@cinema     *1 :leet`[Gerenciando reservas e cancelamentos de uma sala de cinema](https://github.com/qxcodepoo/arcade/blob/master/base/cinema/Readme.md)
+- [ ] `@tabuleiro  +1 :leet`[Jogo de tabuleiro e armadilhas](https://github.com/qxcodepoo/arcade/blob/master/base/tabuleiro/Readme.md)
+- [ ] `@junkfood   +1 :leet`[Comprando comida cara e duvidosa](https://github.com/qxcodepoo/arcade/blob/master/base/junkfood/Readme.md)
 
-### BLOCO_C: ArrayList II - Arrays de Null
+### BLOCO_D: CRUD com mapas e enumerações<!-- +dict:1 -->
 
-- [ ] `@cinema      :leet`[Gerenciando reservas e cancelamentos de uma sala de cinema](https://github.com/qxcodepoo/arcade/blob/master/base/cinema/Readme.md)
-- [ ] `@junkfood    :leet`[Comprando comida cara e duvidosa](https://github.com/qxcodepoo/arcade/blob/master/base/junkfood/Readme.md)
+- [ ] `@contato    *1 :leet`[Gerenciando telefones de um único contato](https://github.com/qxcodepoo/arcade/blob/master/base/contato/Readme.md)
+- [ ] `@agenda     *1 :leet`[Gerencie os vários contatos de uma agenda](https://github.com/qxcodepoo/arcade/blob/master/base/agenda/Readme.md)
+- [ ] `@agiota     *1 :leet`[Gerencie os empréstimos do agiota](https://github.com/qxcodepoo/arcade/blob/master/base/agiota/Readme.md)
+- [ ] `@porquinho  *1 :leet`[Guardando moedas e itens em um cofrinho](https://github.com/qxcodepoo/arcade/blob/master/base/porquinho/Readme.md)
+- [ ] `@tarifas    +1 :leet`[Operações de saque, depósito, extrato](https://github.com/qxcodepoo/arcade/blob/master/base/tarifas/Readme.md)
 
-### BLOCO_C: ArrayList III - CRUD, Composição e Enum
-
-- [ ] `@enumeracao  :leet`[Exemplo de uso de uma classe que funciona como Enumeração](https://github.com/qxcodepoo/arcade/blob/master/base/enumeracao/Readme.md)
-- [ ] `@porquinho   :leet`[Guardando moedas e itens em um cofrinho](https://github.com/qxcodepoo/arcade/blob/master/base/porquinho/Readme.md)
-- [ ] `@tarifas     :leet`[Operações de saque, depósito, extrato](https://github.com/qxcodepoo/arcade/blob/master/base/tarifas/Readme.md)
-
-### BLOCO_D: CRUD com mapas e vetores
-
-- [ ] `@contato     :leet`[Gerenciando telefones de um único contato](https://github.com/qxcodepoo/arcade/blob/master/base/contato/Readme.md)
-- [ ] `@agenda      :leet`[Gerencie os vários contatos de uma agenda](https://github.com/qxcodepoo/arcade/blob/master/base/agenda/Readme.md)
-- [ ] `@agiota      :leet`[Gerencie os empréstimos do agiota](https://github.com/qxcodepoo/arcade/blob/master/base/agiota/Readme.md)
-
-### BLOCO_D: Herança I
+### BLOCO_F: Herança I<!-- +polim:1 -->
 
 - [ ] `@shapes         :leet`[Utilizando interface em círculos e retângulos](https://github.com/qxcodepoo/arcade/blob/master/base/shapes/Readme.md)
 - [ ] `@estacionamento :leet`[Cobrando o valor de carros e motos](https://github.com/qxcodepoo/arcade/blob/master/base/estacionamento/Readme.md)

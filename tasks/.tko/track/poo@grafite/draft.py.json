@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-25_16-24-57",
+            "content": "@@ -1068,24 +1068,25 @@\n se%0A        %0A\n+%0A\n     def inse\n@@ -1141,324 +1141,145 @@\n elf.\n-__calibre != grafite.getcalibre():#primeiro voce verifica se o grafite %C3%A9 do mesmo calibre que a lapiseira, os dois tem que ser 0.7 por exemplo%0A            print(%22fail: calibre incompativel%22)%0A            return False%0A        %0A        if self.HasGrafite():#depois voce verifica se j%C3%A1 tem um grafite dentro da lapiseira\n+HasGrafite():%0A            print(%22fail: calibre incompativel%22)%0A            return False%0A        if grafite.getCalibre() != self.__calibre:\n %0A   \n@@ -1345,25 +1345,16 @@\n n False%0A\n-        %0A\n         \n@@ -1379,97 +1379,8 @@\n fite\n- # se o calibre for igual e n%C3%A3o tiver grafite dentro, ai vc coloca o grafite na lasipeira\n %0A   \n",
+            "lines": "113"
+        },
+        {
+            "label": "2025-10-25_16-36-59",
+            "content": "@@ -1748,100 +1748,69 @@\n te()\n- == False: #verifica se a lapiseira ta vazia%0A            print(%22fail: nao existe grafite%22)%0A \n+:%0A           g = self.__ponta%0A           self.__ponta = None%0A\n     \n@@ -1823,20 +1823,17 @@\n  return \n-None\n+g\n %0A       \n@@ -1829,27 +1829,29 @@\n n g%0A        \n-   \n+else:\n %0A        aux\n@@ -1851,62 +1851,43 @@\n     \n-aux = self.__ponta #se nao tiver vazia, tira o\n+    print(%22fail: nao existe\n  grafite\n %0A   \n@@ -1886,37 +1886,15 @@\n fite\n+%22)\n %0A    \n-    self.__ponta = None%0A\n     \n@@ -1904,19 +1904,20 @@\n  return \n-aux\n+None\n %0A%0A    de\n@@ -2689,92 +2689,21 @@\n cil \n-= Pencil(0.5) # aqui eu to colocando um valor qualquer s%C3%B3 pra ser substituido depois\n+%7C None = None\n %0A   \n@@ -3072,296 +3072,100 @@\n     \n-aux =\n+if\n  pencil\n-.remove()%0A            if aux != None: #se tiver grafite ele printa%0A                print(aux)%0A        elif args%5B0%5D == %22insert%22:%0A            grafite = Grafite(float(args%5B1%5D), args%5B2%5D, int(args%5B3%5D)) #fazendo um grafite pra colocar na lapiseira%0A            pencil.insert(grafite)\n+:%0A                print(pencil.remove())%0A            else:%0A                print()%0A\n %0A%0Ama\n",
+            "lines": "114"
+        },
+        {
+            "label": "2025-10-25_16-50-52",
+            "content": "@@ -2717,15 +2717,13 @@\n te: \n-%5B\n %7Baux%7D\n-%5D\n %22%0A  \n",
+            "lines": "115"
+        },
+        {
+            "label": "2025-10-25_16-51-18",
+            "content": "@@ -2717,13 +2717,15 @@\n te: \n+%5B\n %7Baux%7D\n+%5D\n %22%0A  \n",
+            "lines": "115"
+        },
+        {
+            "label": "2025-10-25_16-51-35",
+            "content": "@@ -745,17 +745,16 @@\n eturn f%22\n-%5B\n %7Bself.__\n@@ -780,16 +780,17 @@\n rdness%7D:\n+ \n %7Bself.__\n@@ -794,17 +794,16 @@\n .__size%7D\n-%5D\n %22%0A    %0Ac\n",
+            "lines": "115"
+        },
+        {
+            "label": "2025-10-25_16-52-04",
+            "content": "@@ -1171,17 +1171,16 @@\n libre():\n- \n #primeir\n@@ -1391,17 +1391,16 @@\n afite():\n- \n #depois \n@@ -1565,16 +1565,17 @@\n rafite #\n+ \n se o cal\n@@ -2773,16 +2773,17 @@\n l(0.5) #\n+ \n aqui eu \n@@ -3203,32 +3203,38 @@\n ve%22:%0A           \n+ aux =\n  pencil.remove()\n@@ -3234,16 +3234,100 @@\n emove()%0A\n+            if aux != None: #se tiver grafite ele printa%0A                print(aux)%0A\n         \n@@ -3504,32 +3504,8 @@\n ite)\n- #colocando na lapiseira\n %0A%0Ama\n",
+            "lines": "115"
+        },
+        {
+            "label": "2025-10-25_16-55-33",
+            "content": "@@ -2072,32 +2072,40 @@\n     print(%22fail:\n+ grafite\n  nao existe graf\n@@ -2095,32 +2095,24 @@\n e nao existe\n- grafite\n %22)%0A         \n@@ -2117,33 +2117,24 @@\n      return%0A\n-        %0A\n         if s\n@@ -3231,57 +3231,8 @@\n ve()\n- #nessa atividade ele n%C3%A3o quer que print o remove\n %0A   \n@@ -3438,72 +3438,8 @@\n eira\n-%0A        elif args%5B0%5D == %22write%22:%0A            pencil.writePage()\n %0A%0Ama\n",
+            "lines": "113"
+        },
+        {
+            "label": "2025-10-25_16-58-26",
+            "content": "@@ -2059,46 +2059,8 @@\n lse:\n- #ve se tem grafite pra poder escrever\n %0A   \n@@ -2167,63 +2167,9 @@\n ze()\n- %3C 10: #ve se ainda tem grafite suficiente pra escrever\n+:\n %0A   \n@@ -2280,55 +2280,8 @@\n et()\n- #quanto de grafite voce gasta enquanto escreve\n %0A   \n@@ -2319,30 +2319,8 @@\n ze()\n- #o tamanho do grafite\n %0A%0A  \n@@ -2351,50 +2351,8 @@\n  10:\n- #ve se ainda sobra grafite depois de usar\n %0A   \n@@ -2502,16 +2502,30 @@\n gasto)%0A%0A\n+            %0A%0A\n     def \n",
+            "lines": "116"
+        },
+        {
+            "label": "2025-10-25_17-07-53",
+            "content": "@@ -2620,17 +2620,17 @@\n  folha i\n-n\n+m\n completa\n",
+            "lines": "114"
+        },
+        {
+            "label": "2025-10-25_17-08-20",
+            "content": "@@ -2504,17 +2504,16 @@\n  gasto %3C\n-=\n  10: #ve\n",
+            "lines": "114"
+        },
+        {
+            "label": "2025-10-25_17-08-58",
+            "content": "@@ -2504,16 +2504,17 @@\n  gasto %3C\n+=\n  10: #ve\n",
+            "lines": "114"
+        },
+        {
+            "label": "2025-10-25_17-09-18",
+            "content": "@@ -2203,17 +2203,16 @@\n Size() %3C\n-=\n  10: #ve\n",
+            "lines": "114"
+        },
+        {
+            "label": "2025-10-25_17-09-42",
+            "content": "@@ -2299,17 +2299,16 @@\n insufici\n-e\n nte%22)%0A  \n",
+            "lines": "114"
+        },
+        {
+            "label": "2025-10-25_17-09-53",
+            "content": "class Grafite:\n    def __init__ (self, calibre:float, hardness:str, size:int ):\n        self.__calibre = calibre\n        self.__hardness = hardness\n        self.__size = size\n\n    def getcalibre(self):\n        return self.__calibre\n    \n    def getHardness(self):\n        return self.__hardness\n    \n    def getSize(self):\n        return self.__size\n    \n    def setSize(self, size:int):\n        self.__size = size\n    \n    def usagepersheet(self) -> int:\n        if self.__hardness == 'HB':\n            return 1\n        elif self.__hardness == '2B':\n            return 2\n        elif self.__hardness == \"4B\":\n            return 4\n        elif self.__hardness == \"6B\":\n            return 6\n        return 0\n    \n    def __str__(self):\n        return f\"[{self.__calibre}:{self.__hardness}:{self.__size}]\"\n    \nclass Pencil:\n    def __init__(self, calibre: float):\n        self.__calibre = calibre\n        self.__ponta: Grafite | None = None\n\n    def HasGrafite(self) -> bool:\n        if self.__ponta != None:\n            return True\n        else:\n            return False\n        \n    def insert(self, grafite: Grafite) -> bool:\n        if self.__calibre != grafite.getcalibre(): #primeiro voce verifica se o grafite \u00e9 do mesmo calibre que a lapiseira, os dois tem que ser 0.7 por exemplo\n            print(\"fail: calibre incompativel\")\n            return False\n        \n        if self.HasGrafite(): #depois voce verifica se j\u00e1 tem um grafite dentro da lapiseira\n            print(\"fail: ja existe grafite\")\n            return False\n        \n        self.__ponta = grafite #se o calibre for igual e n\u00e3o tiver grafite dentro, ai vc coloca o grafite na lasipeira\n        return True\n   \n    def remove(self) -> Grafite | None:\n        if self.HasGrafite() == False: #verifica se a lapiseira ta vazia\n            print(\"fail: nao existe grafite\")\n            return None\n           \n        aux = self.__ponta #se nao tiver vazia, tira o grafite\n        self.__ponta = None\n        return aux\n\n    def writePage(self) -> None:\n        if self.HasGrafite() == False: #ve se tem grafite pra poder escrever\n            print(\"fail: nao existe grafite\")\n            return\n        \n        if self.__ponta.getSize() <= 10: #ve se ainda tem grafite suficiente pra escrever\n            print(\"fail: tamanho insuficiente\")\n            return\n\n        gasto = self.__ponta.usagepersheet() #quanto de grafite voce gasta enquanto escreve\n        tam_A = self.__ponta.getSize() #o tamanho do grafite\n\n        if tam_A - gasto < 10: #ve se ainda sobra grafite depois de usar\n            self.__ponta.setSize(10)\n            print(\"fail: folha incompleta\")\n            return\n        \n        self.__ponta.setSize(tam_A - gasto)\n\n    def __str__(self) -> str:\n        aux = \"\"\n        if self.__ponta != None:\n            aux = f\"{self.__ponta}\"\n        else:\n            aux = \"null\"\n        return f\"calibre: {self.__calibre}, grafite: {aux}\"\n    \n\ndef main():\n    pencil: Pencil = Pencil(0.5) #aqui eu to colocando um valor qualquer s\u00f3 pra ser substituido depois\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(pencil)\n        elif args[0] == \"init\":\n            calibre = float(args[1])\n            pencil = Pencil(calibre)\n        elif args[0] == \"remove\":\n            pencil.remove() #nessa atividade ele n\u00e3o quer que print o remove\n        elif args[0] == \"insert\":\n            grafite = Grafite(float(args[1]), args[2], int(args[3])) #fazendo um grafite pra colocar na lapiseira\n            pencil.insert(grafite) #colocando na lapiseira\n        elif args[0] == \"write\":\n            pencil.writePage()\n\nmain()",
+            "lines": "114"
+        }
+    ]
+}

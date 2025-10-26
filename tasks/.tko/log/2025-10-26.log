@@ -1,0 +1,29 @@
+2025-10-26 16:01:07, MOVE, v:1, k:poo@motouber, mode:PICK
+2025-10-26 16:01:10, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0, size:0
+2025-10-26 16:01:12, MOVE, v:1, k:poo@motouber, mode:BACK
+2025-10-26 16:01:14, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-26 16:01:17, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:100, size:0
+2025-10-26 16:01:19, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:100
+2025-10-26 16:01:19, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:100
+2025-10-26 16:01:20, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:100
+2025-10-26 16:01:20, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:100
+2025-10-26 16:01:21, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:100
+2025-10-26 16:01:21, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:100
+2025-10-26 16:01:21, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:100
+2025-10-26 16:01:21, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:100
+2025-10-26 16:01:21, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:100
+2025-10-26 16:01:23, MOVE, v:1, k:poo@notebook, mode:BACK
+2025-10-26 16:01:57, MOVE, v:1, k:poo@charger, mode:PICK
+2025-10-26 16:01:58, EXEC, v:1, k:poo@charger, mode:FULL, rate:0, size:20
+2025-10-26 16:02:41, MOVE, v:1, k:poo@charger, mode:BACK
+2025-10-26 16:02:51, MOVE, v:1, k:poo@charger, mode:PICK
+2025-10-26 16:02:52, EXEC, v:1, k:poo@charger, mode:FULL, rate:0
+2025-10-26 16:02:59, MOVE, v:1, k:poo@charger, mode:BACK
+2025-10-26 16:28:49, MOVE, v:1, k:poo@charger, mode:PICK
+2025-10-26 16:28:50, EXEC, v:1, k:poo@charger, mode:FULL, rate:0
+2025-10-26 16:29:46, EXEC, v:1, k:poo@charger, mode:FULL, rate:0, size:20
+2025-10-26 16:29:48, EXEC, v:1, k:poo@charger, mode:FULL, rate:0
+2025-10-26 16:29:49, EXEC, v:1, k:poo@charger, mode:FULL, rate:0
+2025-10-26 16:30:23, EXEC, v:1, k:poo@charger, mode:FULL, rate:0, size:20
+2025-10-26 16:30:24, EXEC, v:1, k:poo@charger, mode:FULL, rate:0
+2025-10-26 16:30:32, MOVE, v:1, k:poo@charger, mode:BACK

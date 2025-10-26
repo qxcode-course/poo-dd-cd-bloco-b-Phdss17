@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-26_16-01-58",
+            "content": "@@ -257,16 +257,15 @@\n t(%22$\n-%22 + \n+%7B\n line\n+%7D%22\n )%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-10-26_16-29-46",
+            "content": "@@ -261,17 +261,16 @@\n %22 + line\n- \n )%0A      \n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-10-26_16-30-23",
+            "content": "class notebook:\n    def __init__(self) -> None:\n        self.ligado: bool = False\n        self.carga: int = 0\n\n    def __str__(self) -> str:\n        return f\"\"\n    \ndef main():\n    note = notebook()\n\n    while True:\n        line: str = input()\n        print(\"$\" + line )\n        args: list[str] = line.split(\" \")\n\n        if args[0] == \"end\":\n            break\n        if args[0] == \"show\":\n            print(note)",
+            "lines": "20"
+        }
+    ]
+}
