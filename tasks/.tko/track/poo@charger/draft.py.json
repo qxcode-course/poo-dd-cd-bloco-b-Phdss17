@@ -12,8 +12,238 @@
         },
         {
             "label": "2025-10-26_16-30-23",
-            "content": "class notebook:\n    def __init__(self) -> None:\n        self.ligado: bool = False\n        self.carga: int = 0\n\n    def __str__(self) -> str:\n        return f\"\"\n    \ndef main():\n    note = notebook()\n\n    while True:\n        line: str = input()\n        print(\"$\" + line )\n        args: list[str] = line.split(\" \")\n\n        if args[0] == \"end\":\n            break\n        if args[0] == \"show\":\n            print(note)",
+            "content": "@@ -166,26 +166,14 @@\n def \n-__\n main\n-__() -%3E None\n+()\n :%0A  \n@@ -407,9 +407,8 @@\n nt(note)\n-%0A\n",
             "lines": "20"
+        },
+        {
+            "label": "2025-10-27_11-40-21",
+            "content": "@@ -424,15 +424,4 @@\n te)%0A\n-%0A__main__()\n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-10-27_11-40-41",
+            "content": "@@ -155,59 +155,8 @@\n n f%22\n-%7B%22desligado%22 if self.ligado == False else %22Ligado%22%7D\n %22%0A  \n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-27_11-41-37",
+            "content": "@@ -155,16 +155,8 @@\n n f%22\n-Notebook\n %7B%22de\n@@ -162,18 +162,16 @@\n esligado\n-: \n %22 if sel\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-27_11-41-59",
+            "content": "@@ -159,18 +159,16 @@\n Notebook\n-: \n %7B%22deslig\n@@ -170,16 +170,18 @@\n esligado\n+: \n %22 if sel\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-27_11-42-16",
+            "content": "@@ -108,163 +108,8 @@\n  0%0A%0A\n-    def turn_on(self) -%3E None:%0A        if self.carga == 0:%0A            print(%22fail: n%C3%A3o foi poss%C3%ADvel ligar%22)%0A        else:%0A            self.ligado = True%0A%0A\n     \n@@ -427,34 +427,32 @@\n   break%0A        \n-el\n if args%5B0%5D == %22s\n@@ -484,70 +484,8 @@\n ote)\n-%0A        elif args%5B0%5D == %22turn_on%22:%0A            note.turn_on()\n %0A%0A__\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-27_11-45-03",
+            "content": "@@ -263,126 +263,8 @@\n ue%0A%0A\n-    def use(self, time: int) -%3E None:%0A        if self.ligado == False:%0A            print(%22fail: desligado%22)%0A        %0A%0A\n     \n@@ -704,274 +704,8 @@\n n()%0A\n-        elif args%5B%5D%0A%0A        match args%5B0%5D:%0A            case %22end%22:%0A                break%0A            case %22show%22:%0A                print(note)%0A            case %22turn_on%22:%0A                note.turn_on()%0A            case %22use%22:%0A                note.use(int(args%5B1%5D))%0A%0A\n %0A__m\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-27_11-52-05",
+            "content": "@@ -653,16 +653,202 @@\n t(%22 %22)%0A%0A\n+        if args%5B0%5D == %22end%22:%0A            break%0A        elif args%5B0%5D == %22show%22:%0A            print(note)%0A        elif args%5B0%5D == %22turn_on%22:%0A            note.turn_on()%0A        elif args%5B%5D%0A%0A\n         \n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-10-27_11-52-44",
+            "content": "@@ -50,26 +50,24 @@\n        self.\n-__\n ligado: bool\n@@ -92,86 +92,22 @@\n elf.\n-__battery: battery %7C None = None%0A        self.__charger: charger %7C None = None\n+carga: int = 0\n %0A%0A  \n@@ -155,52 +155,18 @@\n elf.\n-__battery == None and self.__charger\n+carga\n  == \n-None\n+0\n :%0A  \n@@ -240,26 +240,24 @@\n        self.\n-__\n ligado = Tru\n@@ -305,34 +305,32 @@\n         if self.\n-__\n ligado == False:\n@@ -366,16 +366,25 @@\n ligado%22)\n+%0A        \n %0A%0A    de\n@@ -455,18 +455,16 @@\n if self.\n-__\n ligado =\n@@ -489,707 +489,14 @@\n do%22%7D\n- %7B%22, %7Bself.__battery%7D%22 if self.__battery != None else %22%22%7D %7B%22, %7Bself.__charger%7D%22 if self.__charger != None else %22%22%7D%22%0A%0Aclass charger:%0A    def __init__(self, power) -%3E None:%0A        self.__power: int = power %0A%0A    def getPower(self) -%3E int:%0A        return self.__power%0A%0A    def __str__(self) -%3E str:%0A        return f%22Carregador %7Bself.__power%7DW%22%0A%0Aclass battery:%0A    def __init__(self, charge) -%3E None:%0A        self.__maxCharge: int = charge%0A        self.__charge: int = charge%0A%0A    def getMaxCharge(self) -%3E int:%0A        return self.__maxCharge%0A%0A    def getCharge(self) -%3E int:%0A        return self.__charge%0A    %0A    def __str__(self) -%3E str:%0A        return f%22Bateria %7Bself.__charge%7D/%7Bself.__maxCharge%7D%22%0A\n+%22%0A    \n %0Adef\n@@ -901,128 +901,8 @@\n %5D))%0A\n-            case %22set_charger%22:%0A                charger = charger(int(args%5B1%5D))%0A                note.setCharger(charger)\n %0A%0A__\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-10-27_12-15-16",
+            "content": "@@ -582,16 +582,17 @@\n Ligado%22%7D\n+ \n %7B%22, %7Bsel\n@@ -639,16 +639,17 @@\n else %22%22%7D\n+ \n %7B%22, %7Bsel\n",
+            "lines": "65"
+        },
+        {
+            "label": "2025-10-27_12-18-59",
+            "content": "@@ -1,21 +1,22 @@\n class \n-charger\n+notebook\n :%0A    de\n@@ -34,15 +34,8 @@\n self\n-, power\n ) -%3E\n@@ -60,87 +60,120 @@\n f.__\n-power: int = power %0A%0A    def getPower(self) -%3E int:%0A        return self.__power\n+ligado: bool = False%0A        self.__battery: battery %7C None = None%0A        self.__charger: charger %7C None = None\n %0A%0A  \n@@ -170,39 +170,39 @@\n = None%0A%0A    def \n-__str__\n+turn_on\n (self) -%3E str:%0A \n@@ -187,35 +187,36 @@\n urn_on(self) -%3E \n-str\n+None\n :%0A        return\n@@ -213,94 +213,55 @@\n     \n-return f%22Carregador %7Bself.__power%7DW%22%0A%0Aclass battery:%0A    def __init__(\n+if self.__battery == None and \n self\n-, \n+.__\n charge\n-) -%3E\n+r ==\n  Non\n@@ -275,109 +275,134 @@\n     \n-self.__maxCharge: int = charge%0A        self.__charge: int = charge%0A%0A    def getMaxCharge(self\n+    print(%22fail: n%C3%A3o foi poss%C3%ADvel ligar%22)%0A        else:%0A            self.__ligado = True%0A%0A    def use(self, time: int\n ) -%3E \n-int\n+None\n :%0A  \n@@ -407,30 +407,26 @@\n         \n-return\n+if\n  self.__\n maxCharg\n@@ -421,315 +421,234 @@\n f.__\n-maxCharge%0A%0A    def getCharge(self) -%3E int:%0A        return self.__charge%0A    %0A    def __str__(self) -%3E str:%0A        return f%22Bateria %7Bself.__charge%7D/%7Bself.__maxCharge%7D%22%0A%0Aclass notebook:%0A    def __init__(self) -%3E None:%0A        self.__ligado: bool = False%0A        self.__battery: battery %7C None = None%0A        \n+ligado == False:%0A            print(%22fail: desligado%22)%0A%0A    def __str__(self) -%3E str:%0A        return f%22Notebook: %7B%22desligado%22 if self.__ligado == False else %22Ligado%22%7D%7B%22, %7Bself.__battery%7D%22 if self.__battery != None else %22%22%7D%7B%22, %7B\n self\n@@ -653,34 +653,45 @@\n lf.__charger\n-: \n+%7D%22 if self.__\n charger \n %7C None = Non\n@@ -682,43 +682,70 @@\n ger \n-%7C\n+!=\n  None \n-= None%0A%0A    def turn_on(self\n+else %22%22%7D%22%0A%0Aclass charger:%0A    def __init__(self, power\n ) -%3E\n@@ -763,187 +763,216 @@\n     \n-if \n self.__\n-battery == None and self.__charger == None:%0A            print(%22fail: n%C3%A3o foi poss%C3%ADvel ligar%22)%0A        else:%0A            self.__ligado = True%0A%0A    def use(self, time: int\n+power: int = power %0A%0A    def getPower(self) -%3E int:%0A        return self.__power%0A%0A    def __str__(self) -%3E str:%0A        return f%22Carregador %7Bself.__power%7DW%22%0A%0Aclass battery:%0A    def __init__(self, charge\n ) -%3E\n@@ -990,71 +990,74 @@\n     \n-if \n self.__\n-ligado == False:%0A            print(%22fail: desligado%22)\n+maxCharge: int = charge%0A        self.__charge: int = charge\n %0A%0A  \n@@ -1066,50 +1066,33 @@\n def \n-s\n+g\n et\n+Max\n Charge\n-r\n (self\n-, charger: charger\n ) -%3E \n-None\n+int\n :%0A  \n@@ -1101,32 +1101,31 @@\n     \n-self.__charger = c\n+return self.__maxC\n harge\n-r\n %0A%0A  \n@@ -1134,46 +1134,30 @@\n def \n-setBattery(self, bat: battery\n+getCharge(self\n ) -%3E \n-None\n+int\n :%0A  \n@@ -1166,29 +1166,33 @@\n     \n+return \n self.__\n-battery = bat%0A\n+charge%0A    \n %0A   \n@@ -1239,130 +1239,15 @@\n n f%22\n-Notebook: %7B%22desligado%22 if self.__ligado == False else %22Ligado%22%7D%7B%22, %7Bself.__battery%7D%22 if self.__battery != None else %22%22%7D%7B%22,\n+Bateria\n  %7Bse\n@@ -1261,50 +1261,31 @@\n arge\n-r%7D%22 if \n+%7D/%7B\n self.__\n-c\n+maxC\n harge\n-r != None else %22%22\n %7D%22%0A%0A\n-%0A\n def \n",
+            "lines": "65"
+        },
+        {
+            "label": "2025-10-27_12-22-28",
+            "content": "@@ -36,21 +36,16 @@\n f, power\n-: int\n ) -%3E Non\n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-10-27_12-23-02",
+            "content": "@@ -1905,16 +1905,21 @@\n       ch\n+arger\n  = charg\n@@ -1969,16 +1969,21 @@\n arger(ch\n+arger\n )%0A%0A__mai\n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-10-27_12-24-24",
+            "content": "@@ -1262,22 +1262,22 @@\n         \n-note =\n+return\n  f%22Noteb\n@@ -1297,20 +1297,16 @@\n ado%22 if \n-not \n self.__l\n@@ -1311,16 +1311,25 @@\n _ligado \n+== False \n else %22Li\n@@ -1338,25 +1338,9 @@\n do%22%7D\n-%22%0A        bat = f\n+%7B\n %22, %7B\n@@ -1374,22 +1374,18 @@\n battery \n-is not\n+!=\n  None el\n@@ -1393,23 +1393,10 @@\n e %22%22\n-%0A        ch = f\n+%7D%7B\n %22, %7B\n@@ -1434,14 +1434,10 @@\n ger \n-is not\n+!=\n  Non\n@@ -1449,39 +1449,11 @@\n e %22%22\n-%0A        return note + bat + ch\n+%7D%22%0A\n %0A%0Ade\n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-10-27_12-29-50",
+            "content": "@@ -760,39 +760,8 @@\n None\n-%0A        self.__timeOn: int = 0\n %0A%0A  \n@@ -1331,33 +1331,8 @@\n gado\n- por: %7Bself.__timeOn%7D min\n %22%7D%22%0A\n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-10-27_12-31-36",
+            "content": "@@ -1351,17 +1351,16 @@\n do else \n-f\n %22Ligado \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-10-27_12-31-46",
+            "content": "@@ -1353,17 +1353,17 @@\n  else f%22\n-l\n+L\n igado po\n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-10-27_12-32-14",
+            "content": "@@ -1363,16 +1363,17 @@\n gado por\n+:\n  %7Bself._\n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-10-27_12-32-24",
+            "content": "@@ -1093,56 +1093,8 @@\n do%22)\n-%0A        else:%0A            self.__timeOn += time\n %0A%0A  \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-10-27_12-33-08",
+            "content": "@@ -984,97 +984,8 @@\n ue%0A%0A\n-    def turn_off(self) -%3E None:%0A        self.__ligado = False%0A        self.__timeOn = 0%0A%0A\n     \n@@ -1010,32 +1010,32 @@\n : int) -%3E None:%0A\n+\n         if self.\n@@ -1398,31 +1398,8 @@\n ado \n-and self.__timeOn == 0 \n else\n@@ -1925,16 +1925,16 @@\n rn_on%22:%0A\n+\n         \n@@ -1960,69 +1960,8 @@\n n()%0A\n-            case %22turn_off%22:%0A                note.turn_off()%0A\n     \n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-10-27_12-38-02",
+            "content": "@@ -1284,116 +1284,8 @@\n ne:%0A\n-        if self.__charger is not None:%0A            print(%22fail: carregador j%C3%A1 conectado%22)%0A        else:%0A    \n     \n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-10-27_12-39-34",
+            "content": "@@ -1426,258 +1426,8 @@\n er%0A%0A\n-    def rm_charger(self) -%3E charger %7C None:%0A        if self.__charger is None:%0A            print(%22fail: Sem carregador%22)%0A            return None%0A        else:%0A            aux = self.__charger%0A            self.__battery = None%0A            return aux%0A%0A\n     \n@@ -2415,166 +2415,8 @@\n ch)%0A\n-            case %22rm_charger%22:%0A                ch = note.rm_charger()%0A                if ch is not None:%0A                    print(f%22removido %7Bch.getPower%7DW%22)\n %0A__m\n",
+            "lines": "86"
+        },
+        {
+            "label": "2025-10-27_12-47-44",
+            "content": "@@ -2815,18 +2815,16 @@\n getPower\n-()\n %7DW%22)%0A__m\n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-10-27_12-50-23",
+            "content": "@@ -1585,42 +1585,8 @@\n se:%0A\n-            self.__ligado = False%0A\n     \n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-10-27_12-50-58",
+            "content": "@@ -1667,23 +1667,23 @@\n  self.__\n-charg\n+batt\n er\n+y\n  = None%0A\n",
+            "lines": "99"
+        },
+        {
+            "label": "2025-10-27_12-51-33",
+            "content": "@@ -2832,9 +2832,9 @@\n t(f%22\n-R\n+r\n emov\n",
+            "lines": "99"
+        },
+        {
+            "label": "2025-10-27_12-51-51",
+            "content": "@@ -1875,16 +1875,39 @@\n _ligado \n+and self.__timeOn == 0 \n else f%22l\n",
+            "lines": "99"
+        },
+        {
+            "label": "2025-10-27_13-52-04",
+            "content": "@@ -1717,18 +1717,17 @@\n  def set\n-_b\n+B\n attery(s\n@@ -2837,123 +2837,8 @@\n W%22)%0A\n-            case %22set_battery%22:%0A                bat = battery(int(args%5B1%5D))%0A                note.set_battery(bat)%0A%0A\n __ma\n",
+            "lines": "99"
+        },
+        {
+            "label": "2025-10-27_13-56-45",
+            "content": "@@ -493,86 +493,8 @@\n    %0A\n-    def use(self, energy: int) -%3E None:%0A        self.__charge -= energy %0A    %0A\n     \n@@ -1197,92 +1197,8 @@\n se:%0A\n-            if self.__battery is not None:%0A                self.__battery.use(time)%0A\n     \n",
+            "lines": "103"
+        },
+        {
+            "label": "2025-10-27_14-00-07",
+            "content": "@@ -1929,414 +1929,28 @@\n     \n-if self.__battery is not None:%0A            print(%22fail: bateria j%C3%A1 conectado%22)%0A        else:%0A            self.__battery = bat%0A%0A    def rm_battery(self) -%3E battery %7C None:%0A        if self.__battery is None:%0A            print(%22fail: Sem bateria%22)%0A            return None%0A        else:%0A            self.__ligado = False%0A            aux = self.__battery%0A            self.__battery = None%0A            return aux\n+self.__battery = bat\n %0A%0A  \n@@ -2992,19 +2992,20 @@\n Power()%7D\n+W\n %22)%0A\n-\n         \n@@ -3064,32 +3064,32 @@\n y(int(args%5B1%5D))%0A\n+\n                 \n@@ -3113,161 +3113,8 @@\n bat)\n-%0A            case %22rm_battery%22:%0A                bat = note.rm_battery()%0A                if bat is not None:%0A                    print(f%22Removido %7Bbat%7DW%22)\n %0A%0A__\n",
+            "lines": "108"
+        },
+        {
+            "label": "2025-10-27_14-06-01",
+            "content": "@@ -3378,17 +3378,16 @@\n Power()%7D\n-W\n %22)%0A     \n@@ -3644,16 +3644,17 @@\n do %7Bbat%7D\n+W\n %22)%0A%0A__ma\n",
+            "lines": "125"
+        },
+        {
+            "label": "2025-10-27_14-06-19",
+            "content": "@@ -614,16 +614,24 @@\n eturn f%22\n+Bateria \n %7Bself.__\n",
+            "lines": "125"
+        },
+        {
+            "label": "2025-10-27_14-06-48",
+            "content": "@@ -187,32 +187,43 @@\n        return f%22\n+Carregador \n %7Bself.__power%7DW%22\n@@ -2478,16 +2478,8 @@\n  f%22,\n- Bateria\n  %7Bse\n@@ -2551,19 +2551,8 @@\n  f%22,\n- Carregador\n  %7Bse\n",
+            "lines": "125"
+        },
+        {
+            "label": "2025-10-27_14-07-37",
+            "content": "@@ -1297,46 +1297,8 @@\n None\n- and self.__battery.getCharge() %3E time\n :%0A  \n@@ -1340,36 +1340,32 @@\n me)%0A            \n-    \n self.__timeOn +=\n@@ -1374,243 +1374,8 @@\n ime%0A\n-            else:%0A                assert self.__battery is not None%0A                self.__timeOn += self.__battery.getCharge()%0A                self.__battery.use(self.__battery.getCharge())%0A                print(%22fail: descarregou%22)%0A%0A\n %0A   \n",
+            "lines": "125"
+        },
+        {
+            "label": "2025-10-27_14-11-01",
+            "content": "@@ -1422,32 +1422,82 @@\n           else:%0A\n+                assert self.__battery is not None%0A\n                 \n",
+            "lines": "131"
+        },
+        {
+            "label": "2025-10-27_14-37-01",
+            "content": "@@ -1326,17 +1326,16 @@\n arge() %3E\n-=\n  time:%0A \n@@ -1430,74 +1430,9 @@\n   el\n-if self.__battery is not None and self.__battery.getCharge() %3C tim\n+s\n e:%0A \n",
+            "lines": "130"
+        },
+        {
+            "label": "2025-10-27_14-38-24",
+            "content": "@@ -1666,118 +1666,8 @@\n u%22)%0A\n-            elif self.__battery is None and self.__charger is not None:%0A                self.__timeOn += time%0A\n %0A%0A  \n",
+            "lines": "130"
+        },
+        {
+            "label": "2025-10-27_14-39-49",
+            "content": "@@ -1623,46 +1623,8 @@\n ())%0A\n-                self.__ligado = False%0A\n     \n",
+            "lines": "132"
+        },
+        {
+            "label": "2025-10-27_14-40-15",
+            "content": "@@ -1326,16 +1326,17 @@\n arge() %3E\n+=\n  time:%0A \n@@ -1489,17 +1489,16 @@\n arge() %3C\n-=\n  time:%0A \n",
+            "lines": "133"
+        },
+        {
+            "label": "2025-10-27_14-40-31",
+            "content": "@@ -3079,16 +3079,16 @@\n e + \n-ch + bat\n+bat + ch\n %0A%0Ade\n",
+            "lines": "133"
+        },
+        {
+            "label": "2025-10-27_14-43-02",
+            "content": "@@ -490,24 +490,18 @@\n def \n+u\n s\n-etCharg\n e(self, \n ch: \n@@ -496,18 +496,22 @@\n e(self, \n-ch\n+energy\n : int) -\n@@ -540,20 +540,26 @@\n _charge \n+-\n = \n-ch\n+energy \n %0A    %0A  \n@@ -1353,214 +1353,27 @@\n     \n-if self.__charger is not None:%0A                    self.__battery.setCharge(self.__charger.getPower() * time)%0A                else:%0A                    self.__battery.setCharge(self.__battery.getCharge() - \n+self.__battery.use(\n time\n@@ -1516,58 +1516,24 @@\n     \n-if \n self.__\n-charger is not None:%0A                   \n+timeOn +=\n  sel\n@@ -1536,33 +1536,33 @@\n  self.__battery.\n-s\n+g\n etCharge(self.__\n@@ -1558,191 +1558,45 @@\n rge(\n-self.__charger.getPower() * time)%0A                    self.__timeOn += time%0A                else: %0A                    self.__timeOn += self.__battery.getCharge()%0A                    \n+)%0A                self.__battery.use(\n self\n@@ -1606,17 +1606,17 @@\n battery.\n-s\n+g\n etCharge\n@@ -1620,15 +1620,11 @@\n rge(\n-0\n+)\n )%0A\n-    \n     \n@@ -1649,36 +1649,32 @@\n _ligado = False%0A\n-    \n                 \n",
+            "lines": "133"
+        },
+        {
+            "label": "2025-10-27_15-02-55",
+            "content": "@@ -1425,37 +1425,8 @@\n rge(\n-self.__battery.getCharge() + \n self\n@@ -1775,37 +1775,8 @@\n rge(\n-self.__battery.getCharge() + \n self\n",
+            "lines": "140"
+        },
+        {
+            "label": "2025-10-27_15-04-00",
+            "content": "@@ -524,105 +524,8 @@\n ne:%0A\n-        if ch %3E self.__maxCharge:%0A            self.__charge = self.__maxCharge%0A        else:%0A    \n     \n",
+            "lines": "140"
+        },
+        {
+            "label": "2025-10-27_15-05-14",
+            "content": "@@ -2160,32 +2160,38 @@\n      self.__\n-on_off()\n+ligado = False\n %0A           \n@@ -2706,32 +2706,38 @@\n      self.__\n-on_off()\n+ligado = False\n %0A           \n@@ -3179,16 +3179,22 @@\n f.__\n-on_off()\n+ligado = False\n %0A   \n@@ -3249,32 +3249,32 @@\n _battery = None%0A\n+\n             retu\n@@ -3285,226 +3285,8 @@\n ux%0A%0A\n-    def __on_off(self) -%3E None:%0A        if self.__battery is not None and self.__battery.getCharge() %3E 0 or self.__charger is not None:%0A            self.__ligado = True%0A        else:%0A            self.__ligado = False%0A%0A\n     \n",
+            "lines": "143"
+        },
+        {
+            "label": "2025-10-27_15-13-17",
+            "content": "@@ -3306,17 +3306,16 @@\n      if \n-(\n self.__b\n@@ -3367,17 +3367,16 @@\n ge() %3E 0\n-)\n  or self\n",
+            "lines": "149"
+        },
+        {
+            "label": "2025-10-27_15-14-00",
+            "content": "@@ -2677,32 +2677,60 @@\n e%0A        else:%0A\n+            self.__on_off()%0A\n             aux \n@@ -2784,36 +2784,8 @@\n one%0A\n-            self.__on_off()%0A\n     \n@@ -3136,32 +3136,60 @@\n e%0A        else:%0A\n+            self.__on_off()%0A\n             aux \n@@ -3243,36 +3243,8 @@\n one%0A\n-            self.__on_off()%0A\n     \n",
+            "lines": "149"
+        },
+        {
+            "label": "2025-10-27_15-16-59",
+            "content": "class charger:\n    def __init__(self, power: int) -> None:\n        self.__power: int = power \n\n    def getPower(self) -> int:\n        return self.__power\n\n    def __str__(self) -> str:\n        return f\"{self.__power}W\"\n\nclass battery:\n    def __init__(self, charge) -> None:\n        self.__maxCharge: int = charge\n        self.__charge: int = charge\n\n    def getMaxCharge(self) -> int:\n        return self.__maxCharge\n\n    def getCharge(self) -> int:\n        return self.__charge\n    \n    def setCharge(self, ch: int) -> None:\n        if ch > self.__maxCharge:\n            self.__charge = self.__maxCharge\n        else:\n            self.__charge = ch\n    \n    def __str__(self) -> str:\n        return f\"{self.__charge}/{self.__maxCharge}\"\n\nclass notebook:\n    def __init__(self) -> None:\n        self.__ligado: bool = False\n        self.__battery: battery | None = None\n        self.__charger: charger | None = None\n        self.__timeOn: int = 0\n\n    def turn_on(self) -> None:\n        if self.__battery == None and self.__charger == None:\n            print(\"fail: n\u00e3o foi poss\u00edvel ligar\")\n        else:\n            self.__ligado = True\n\n    def turn_off(self) -> None:\n        self.__ligado = False\n        self.__timeOn = 0\n\n    def use(self, time: int) -> None:\n        if self.__ligado == False:\n            print(\"fail: desligado\")\n        else:\n            if self.__battery is not None and self.__battery.getCharge() > time:\n                if self.__charger is not None:\n                    self.__battery.setCharge(self.__battery.getCharge() + self.__charger.getPower() * time)\n                else:\n                    self.__battery.setCharge(self.__battery.getCharge() - time)\n                self.__timeOn += time\n            elif self.__battery is not None and self.__battery.getCharge() <= time:\n                if self.__charger is not None:\n                    self.__battery.setCharge(self.__battery.getCharge() + self.__charger.getPower() * time)\n                    self.__timeOn += time\n                else: \n                    self.__timeOn += self.__battery.getCharge()\n                    self.__battery.setCharge(0)\n                    self.__on_off()\n                    print(\"fail: descarregou\")\n            elif self.__battery is None and self.__charger is not None:\n                self.__timeOn += time\n\n\n    def setCharger(self, charger: charger) -> None:\n        if self.__charger is not None:\n            print(\"fail: carregador j\u00e1 conectado\")\n        else:\n            self.__charger = charger\n\n    def rm_charger(self) -> charger | None:\n        if self.__charger is None:\n            print(\"fail: Sem carregador\")\n            return None\n        else:\n            aux = self.__charger\n            self.__charger = None\n            self.__on_off()\n            return aux\n\n    def set_battery(self, bat: battery) -> None:\n        if self.__battery is not None:\n            print(\"fail: bateria j\u00e1 conectado\")\n        else:\n            self.__battery = bat\n\n    def rm_battery(self) -> battery | None:\n        if self.__battery is None:\n            print(\"fail: Sem bateria\")\n            return None\n        else:\n            aux = self.__battery\n            self.__battery = None\n            self.__on_off()\n            return aux\n\n    def __on_off(self) -> None:\n        if (self.__battery is not None and self.__battery.getCharge() > 0) or self.__charger is not None:\n            self.__ligado = True\n        else:\n            self.__ligado = False\n\n    def __str__(self) -> str:\n        note = f\"Notebook: {\"desligado\" if not self.__ligado else f\"ligado por {self.__timeOn} min\"}\"\n        bat = f\", Bateria {self.__battery}\" if self.__battery is not None else \"\"\n        ch = f\", Carregador {self.__charger}\" if self.__charger is not None else \"\"\n        return note + ch + bat\n\ndef __main__() -> None:\n    note = notebook()\n\n    while True:\n        line: str = input()\n        print(\"$\" + line )\n        args: list[str] = line.split(\" \")\n\n        match args[0]:\n            case \"end\":\n                break\n            case \"show\":\n                print(note)\n            case \"turn_on\":\n                note.turn_on()\n            case \"turn_off\":\n                note.turn_off()\n            case \"use\":\n                note.use(int(args[1]))\n            case \"set_charger\":\n                ch = charger(int(args[1]))\n                note.setCharger(ch)\n            case \"rm_charger\":\n                ch = note.rm_charger()\n                if ch is not None:\n                    print(f\"Removido {ch.getPower()}W\")\n            case \"set_battery\":\n                bat = battery(int(args[1]))\n                note.set_battery(bat)\n            case \"rm_battery\":\n                bat = note.rm_battery()\n                if bat is not None:\n                    print(f\"Removido {bat}\")\n\n__main__()",
+            "lines": "149"
         }
     ]
 }
